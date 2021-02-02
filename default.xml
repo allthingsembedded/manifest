@@ -3,7 +3,7 @@
   <remote fetch="https://github.com" name="github" review="https://github.com"/>
   <default revision="repo" remote="github" sync-j="4" sync-s="true" />
 
-  <project name="Javier-varez/buildsystem.git" path="buildsystem" groups="postform,cortex-m-scheduler" >
+  <project name="Javier-varez/buildsystem.git" path="buildsystem" groups="postform,cortex-m-scheduler" revision="main" >
     <linkfile src="template.mk" dest="Makefile" />
   </project>
 
