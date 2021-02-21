@@ -7,7 +7,7 @@
     <linkfile src="template.mk" dest="Makefile" />
   </project>
 
-  <project name="Javier-varez/Postform" path="postform" groups="postform" revision="repo" />
+  <project name="Javier-varez/Postform" path="postform" groups="postform" />
   <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" groups="postform" />
 
   <project name="Javier-varez/cortex-m-scheduler" path="cortex-m-scheduler" groups="cortex-m-scheduler" revision="repo" />
