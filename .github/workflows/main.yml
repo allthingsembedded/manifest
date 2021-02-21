@@ -9,7 +9,16 @@ jobs:
       shell: bash
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
-    - uses: Javier-varez/google-repo-action@v0.2
+    - name: Checkout project
+      uses: Javier-varez/google-repo-action@v0.2
       with:
         manifest-url: 'Javier-varez/manifest'
         manifest-branch: ${{ steps.extract_branch.outputs.branch }}
+    - name: arm-none-eabi-gcc
+      uses: fiam/arm-none-eabi-gcc@v1.0.3
+      with:
+        release: '9-2020-q2'
+    - name: Install bear
+      run: sudo apt install bear
+    - name: Builds the project
+      run: make -j
