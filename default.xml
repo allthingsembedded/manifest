@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://github.com" name="github" review="https://github.com"/>
-  <default revision="repo" remote="github" sync-j="4" sync-s="true" />
+  <default revision="main" remote="github" sync-j="4" sync-s="true" />
 
-  <project name="Javier-varez/buildsystem" path="buildsystem" groups="postform,cortex-m-scheduler" revision="main" >
+  <project name="Javier-varez/buildsystem" path="buildsystem" groups="postform,cortex-m-scheduler" >
     <linkfile src="template.mk" dest="Makefile" />
   </project>
 
-  <project name="Javier-varez/Postform" path="postform" groups="postform" />
+  <project name="Javier-varez/Postform" path="postform" groups="postform" revision="repo" />
   <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" groups="postform" />
 
-  <project name="Javier-varez/cortex-m-scheduler" path="cortex-m-scheduler" groups="cortex-m-scheduler" />
+  <project name="Javier-varez/cortex-m-scheduler" path="cortex-m-scheduler" groups="cortex-m-scheduler" revision="repo" />
 
-  <project name="Javier-varez/third_party_configs" path="third_party/configs" groups="postform,cortex-m-scheduler" revision="main" >
+  <project name="Javier-varez/third_party_configs" path="third_party/configs" groups="postform,cortex-m-scheduler" >
     <linkfile src="config.mk" dest="third_party/build.mk" />
   </project>
   <project name="libopencm3/libopencm3" path="third_party/libopencm3" groups="postform" revision="8435287300e5ca9af9f889c529e7b1fa019c42fb" />

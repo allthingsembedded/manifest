@@ -1,13 +1,10 @@
 on: [push]
 
 jobs:
-  google-repo-test:
+  download-manifest-branch:
     runs-on: ubuntu-latest
-    name: A job to test google-repo-checkout
+    name: Downloads the manifest branch
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - uses: Javier-varez/google-repo-action@v0.1
+    - uses: Javier-varez/google-repo-action@v0.2
       with:
-        repo-url: 'https://github.com/Javier-varez/manifest.git'
-
+        manifest-url: 'Javier-varez/manifest'
