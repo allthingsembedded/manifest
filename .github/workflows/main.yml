@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Downloads the manifest branch
     steps:
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
     - uses: Javier-varez/google-repo-action@v0.2
       with:
         manifest-url: 'Javier-varez/manifest'
+        manifest-branch: ${{ steps.extract_branch.outputs.branch }}
