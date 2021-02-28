@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com" review="https://github.com"/>
+  
+  <default remote="github" revision="main" sync-j="4" sync-s="true"/>
+  
+  <project name="Javier-varez/Popcorn" path="popcorn" revision="ac4aa1119488481dc355e3b1a878caa9a160f09f" upstream="main" dest-branch="main" groups="popcorn" sync-s="true"/>
+  <project name="Javier-varez/Postform" path="postform" revision="1011256e6b9fa6b9f45fb3c6d2770789775d8897" upstream="main" dest-branch="main" groups="postform" sync-s="true"/>
+  <project name="Javier-varez/buildsystem" path="buildsystem" revision="dd20a897a83c375530b6d8bf1c906b0c5244ac3d" upstream="main" dest-branch="main" groups="postform,popcorn" sync-s="true">
+    <linkfile src="template.mk" dest="Makefile"/>
+  </project>
+  <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" revision="a997aeec20d001c9df5efb3afca8b764c849d19a" upstream="main" dest-branch="main" groups="postform" sync-s="true"/>
+  <project name="Javier-varez/third_party_configs" path="third_party/configs" revision="c51ebbbc197b1df9fbc94e7aa683978ddc815b5e" upstream="main" dest-branch="main" groups="postform,popcorn" sync-s="true">
+    <linkfile src="config.mk" dest="third_party/build.mk"/>
+  </project>
+  <project name="STMicroelectronics/STM32CubeF1" path="third_party/STM32CubeF1" revision="276c4ab9537e83b9897badb68e02d9c4c46c5c22" upstream="refs/tags/v1.8.3" dest-branch="refs/tags/v1.8.3" groups="popcorn" sync-s="true"/>
+  <project name="libopencm3/libopencm3" path="third_party/libopencm3" revision="8435287300e5ca9af9f889c529e7b1fa019c42fb" groups="postform" sync-s="true"/>
+</manifest>
