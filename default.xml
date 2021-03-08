@@ -15,7 +15,7 @@
   <project name="Javier-varez/third_party_configs" path="third_party/configs" groups="postform,popcorn" >
     <linkfile src="config.mk" dest="third_party/build.mk" />
   </project>
-  <project name="libopencm3/libopencm3" path="third_party/libopencm3" groups="postform" revision="8435287300e5ca9af9f889c529e7b1fa019c42fb" />
+  <project name="libopencm3/libopencm3" path="third_party/libopencm3" groups="postform,popcorn" revision="8435287300e5ca9af9f889c529e7b1fa019c42fb" />
   <project name="STMicroelectronics/STM32CubeF1" path="third_party/STM32CubeF1" groups="popcorn" revision="refs/tags/v1.8.3" />
 
 </manifest>
