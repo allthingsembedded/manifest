@@ -7,7 +7,7 @@
     <linkfile src="template.mk" dest="Makefile" />
   </project>
 
-  <project name="Javier-varez/Postform" path="postform" groups="postform" />
+  <project name="Javier-varez/Postform" path="postform" groups="postform,popcorn" />
   <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" groups="postform" />
 
   <project name="Javier-varez/Popcorn" path="popcorn" groups="popcorn"/>
