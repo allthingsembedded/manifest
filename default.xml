@@ -4,7 +4,7 @@
   <default revision="main" remote="github" sync-j="4" sync-s="true" />
 
   <!-- Build System -->
-  <project name="Javier-varez/buildsystem" path="buildsystem" groups="postform,popcorn" >
+  <project name="Javier-varez/buildsystem" path="buildsystem" groups="postform,popcorn,rp2040_app" >
     <linkfile src="template.mk" dest="Makefile" />
   </project>
 
@@ -12,7 +12,7 @@
   <project name="Javier-varez/Postform" path="postform" groups="postform,popcorn" />
   <project name="Javier-varez/Popcorn" path="popcorn" groups="popcorn"/>
   <project name="Javier-varez/stack_overflow_dwt_protection" path="stack_overflow_app" />
-  <project name="Javier-varez/rp2040_app" path="rp2040_app" />
+  <project name="Javier-varez/rp2040_app" path="rp2040_app" groups="rp2040_app" />
 
   <!-- Third-party projects -->
   <project name="Javier-varez/third_party_configs" path="third_party/configs" groups="postform,popcorn" >
@@ -22,7 +22,7 @@
   <project name="STMicroelectronics/STM32CubeF1" path="third_party/STM32CubeF1" groups="popcorn" revision="refs/tags/v1.8.3" />
 
   <!-- Cortex-M projects -->
-  <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" groups="postform,popcorn" />
+  <project name="Javier-varez/cortex-m_startup" path="cortex-m_startup" groups="postform,popcorn,rp2040_app" />
   <project name="Javier-varez/cortex-m_hal" path="cortex-m_hal" groups="postform,popcorn" />
 
 </manifest>
